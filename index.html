@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meme Generator with Draggable Text and Styling</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Meme Generator</h1>
+
+  <div>
+    <select id="meme-select">
+      <option value="">Loading memes...</option>
+    </select>
+  </div>
+
+  <div>
+    <button id="add-text-btn">Add Text</button>
+  </div>
+
+  <div id="meme-container">
+    <img id="meme-image" src="" alt="Meme Image" crossorigin="anonymous" />
+  </div>
+
+  <div id="text-controls" style="display:none;">
+    <label>
+      Text:
+      <input type="text" id="text-input" />
+    </label>
+    <label>
+      Font size:
+      <input type="number" id="font-size-input" min="10" max="100" />
+    </label>
+    <label>
+      Color:
+      <input type="color" id="color-input" />
+    </label>
+    <label>
+      Font family:
+      <select id="font-family-select">
+        <option value="Impact, Arial Black, sans-serif">Impact</option>
+        <option value="Arial Black, Gadget, sans-serif">Arial Black</option>
+        <option value="'Comic Sans MS', cursive, sans-serif">Comic Sans MS</option>
+        <option value="'Courier New', Courier, monospace">Courier New</option>
+        <option value="'Times New Roman', Times, serif">Times New Roman</option>
+        <option value="'Georgia', serif">Georgia</option>
+        <option value="'Verdana', Geneva, sans-serif">Verdana</option>
+      </select>
+    </label>
+  </div>
+
+  <div>
+    <button id="download-btn">Download Meme</button>
+    <button id="share-btn">Copy Meme Link</button>
+    <button id="whatsapp-share-btn">Share on WhatsApp</button>
+  </div>
+
+  <div id="share-msg"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

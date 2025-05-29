@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #222;
+  color: #eee;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 10px;
+}
+select, button, input[type="text"], input[type="number"], input[type="color"] {
+  padding: 8px;
+  margin: 8px 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+#meme-container {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+  border: 2px solid #555;
+  background: #000;
+  user-select: none;
+  width: 100%;
+  overflow: hidden;
+}
+#meme-image {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+.meme-text-box {
+  position: absolute;
+  min-width: 50px;
+  max-width: 90%;
+  padding: 4px 8px;
+  cursor: move;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  border: 2px dashed transparent;
+  user-select: none;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: Impact, Arial Black, sans-serif;
+   word-break: break-word;
+}
+.meme-text-box:focus {
+  outline: none;
+  border-color: #ff4757;
+  background-color: rgba(0,0,0,0.4);
+}
+button {
+  cursor: pointer;
+  background-color: #ff4757;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #ff6b81;
+}
+#text-controls {
+  margin: 20px auto;
+  max-width: 500px;
+  background: #111;
+  border: 2px solid #ff4757;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#share-msg {
+  margin-top: 10px;
+  color: #2ed573;
+}
+
+/* Make inputs bigger and stacked on mobile */
+@media (max-width: 600px) {
+  #text-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+  select, button, input[type="text"], input[type="number"], input[type="color"] {
+    width: 90%;
+    font-size: 18px;
+  }
+  #meme-container {
+    max-width: 95vw;
+  }
+}
