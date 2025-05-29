@@ -19,10 +19,9 @@ A fun and interactive meme generator that allows you to:
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
-- [Meme API](https://api.imgflip.com/get_memes)
+- [Meme API] (https://api.imgflip.com/get_memes)
 
 -  Clone the repo:
-   ```bash
 git clone https://github.com/suprajadontamsetty/meme-generator.git
  cd meme-generator
 
